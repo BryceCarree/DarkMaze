@@ -1,17 +1,13 @@
 #ifndef USER_HPP
 #define USER_HPP
 
-#include "movementkeys.hpp"
-
-// pragma once
-class User
-{
+class User {
 	int xLocation;
 	int yLocation;
 
-	User(MovementKeys xStart, MovementKeys yStart);
+	User(int xStart, int yStart);
 
-	void move(MovementKeys direction);
+	void move(char direction);
 };
 
 #endif
